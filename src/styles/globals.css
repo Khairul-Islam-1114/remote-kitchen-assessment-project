@@ -14,10 +14,32 @@
 
 /* START: Header styles */
 .header{
-  @apply w-full absolute z-10 top-0 py-1;
+  @apply w-full absolute z-10 top-0 py-4 mb-10;
 }
 
 .navbar{
-  @apply w-[90vw] mx-auto flex justify-between items-center;
+  @apply w-[90vw] mx-auto text-base sm:text-lg lg:text-xl font-black text-teal-600;
 }
 /* END: Header styles */
+
+
+/* _______________________ */
+
+
+/* START: Hero Styles */
+.hero {
+  @apply w-screen h-screen relative flex items-center justify-center;
+}
+
+.hero__content{
+  @apply absolute top-[15%] sm:top-[20%] md:top-[25%] lg:top-[35%] flex flex-col items-center justify-center;
+}
+
+.hero__title {
+  @apply text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white;
+}
+
+.hero__subtitle {
+  @apply text-sm sm:text-base md:text-xl lg:text-2xl text-center px-5 text-white font-light ;
+}
+/* START: Hero Styles */

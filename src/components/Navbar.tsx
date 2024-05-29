@@ -6,7 +6,7 @@ const Navbar = () => {
         <header className='header'>
             <nav className='navbar'>
 
-                <Link href='/' className='font-black text-orange-600'>Remote Kitchen</Link>
+                <Link href='/'>Remote Kitchen</Link>
 
             </nav>
         </header>
