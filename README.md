@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Task 1:
+A project titled, “Alex’s Kitchen” from team "Remote Kitchen" uses Git for version control. Several developers are contributing, with each working on their own branch. The team follows certain conventions. Suppose you need to submit a hotfix. How would you name your branch? After finalizing your work in your designated branch, detail the steps you would take to create a PR and merge it with the production branch.
 
-## Getting Started
+----------
 
-First, run the development server:
+## Task 1 Solution:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## a. Branch Naming:
+For a "hotfix", the branch name should follows a convention to indicate its purpose clearly. So, by following this "hotfix/<description>" convention for a hotfix branch I will named it something like "hotfix/fix-critical-bug".
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+----------
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## b. Steps to create a PR and Merge with Production:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 1. Create the Hottfix Branch:
 
-## Learn More
+#. I will check existing branches by commanding:
 
-To learn more about Next.js, take a look at the following resources:
+>> git branch -a
+ 
+Suppose the production branch is named "main";
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#. I will switch to the "main" branch by commanding:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+>> git checkout main
 
-## Deploy on Vercel
+#. I will Pull and Update the "main" branch to the latest version from Remote:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+>> git pull origin main
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#. I will create and switch to the "hotfix" branch:
+
+>> git checkout -b hotfix/fix-critical-bug
+
+----------
+
+## 2. Implement the Hotfix:
+
+#. I will make the necessary changes to fix the bugs
+
+#. Then stage and commit those changes:
+
+>> git add .
+>> git commit -m "Fix critical bug in production"
+
+----------
+
+## 3. Push the Hotfix Branch to the Remote Repository:
+
+>> git push origin hotfix/fix-critical-bug
+
+----------
+
+## 4. Create a Pull Request (PR):
+
+#. I will go to the repository on GitHub.
+
+#. Navigate to the "Pull Request" tab.
+
+#. Click on the "New Pull Request" button.
+
+#. Select "main" as base and "hotfix/fix-critical-bug" as compare branch.
+
+#. Then fill in the PR details with clear title and description of what the hotfix addresses.
+
+#. Then assign reviewers and add relevant labels (e.g.: "hotfix").
+
+----------
+
+## 5. The PR will Get Reviwed:
+
+#. Responsible team member will review the request and address feedback or requested changes if needed.
+
+----------
+
+## 6. Merge the PR:
+
+#. If everything is okay and the the request is approved then I will able to "Merge" it by clicking the "Merge pull request" button.
+
+----------
+
+## 7. Delete the Branch:
+
+#. Now I can delete the hotfix branch from the remote repository and also from local.
+
+>> git branch -d hotfix/fix-critical-bug
