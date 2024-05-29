@@ -32,8 +32,8 @@ const foodSlice = createSlice({
             }
         },
         // Reducer for deleting a food item
-        deleteItem: (state, action: PayloadAction<FoodItem>) => {
-            state.items = state.items.filter(item => item.id !== action.payload.id);
+        deleteItem: (state, action: PayloadAction<string>) => {
+            state.items = state.items.filter(item => item.id !== action.payload);
         }
     },
     extraReducers: builder => {

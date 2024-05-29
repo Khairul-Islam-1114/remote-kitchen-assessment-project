@@ -20,7 +20,7 @@
 }
 
 .navbar{
-  @apply w-[90vw] mx-auto text-base sm:text-lg lg:text-xl font-black text-teal-600;
+  @apply w-[90vw] mx-auto text-base sm:text-lg lg:text-xl font-black text-blue-600;
 }
 /* END: Header styles */
 
@@ -58,6 +58,51 @@
   @apply text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 underline decoration-double underline-offset-8 decoration-orange-500;
 }
 
-/* START: FoodDisplay Styles */
+/* END: FoodDisplay Styles */
+
+
+
+/* _________________________________ */
+
+
+
+/* START: FoodCard Styles */
+
+.add__btn{
+  @apply mt-10;
+}
+
+.card__wrapper{
+  @apply w-screen flex flex-wrap my-20 gap-10 px-5;
+}
+
+.card{
+  @apply w-[40vw] md:w-[25vw] lg:w-[20vw] h-[35vh] lg:h-[50vh] shadow-2xl rounded-lg mx-auto border border-gray-400;
+}
+
+
+.card__image{
+  @apply h-[20vh] lg:h-[35vh] w-full mx-auto block rounded-md object-cover;
+}
+
+.card__title{
+  @apply text-xs font-semibold truncate hover:text-clip break-normal hover:text-wrap hover:text-xs text-center uppercase px-2 md:text-sm mt-px transform duration-1000;
+}
+
+.btn__wrapper{
+  @apply flex justify-between gap-2;
+}
+
+.delete__btn{
+  @apply bg-red-500 rounded-full px-4 py-1 text-white hover:bg-red-600 text-xs;
+}
+
+
+.edit__btn{
+  @apply bg-yellow-500 rounded-full px-4 py-1 text-white hover:bg-yellow-600 text-xs;
+}
+/* END: FoodCard Styles */
+
+
 
 
