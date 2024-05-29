@@ -104,5 +104,23 @@
 /* END: FoodCard Styles */
 
 
+/* __________________________ */
+
+
+/* START: Footer Styles */
+
+.footer__text{
+  @apply text-center text-gray-700 bg-slate-100 py-5;
+}
+
+/* END: Footer Styles */
+
+
+/* ______________________________ */
+/* ______________________________ */
+
+
+/* END OF STYLE */
+
 
 
