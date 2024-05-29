@@ -12,6 +12,8 @@
 }
 
 
+
+
 /* START: Header styles */
 .header{
   @apply w-full absolute z-10 top-0 py-4 mb-10;
@@ -28,12 +30,10 @@
 
 /* START: Hero Styles */
 .hero {
-  @apply w-screen h-screen relative flex items-center justify-center;
+  @apply w-full h-[25vh] sm:h-[50vh] md:h-[75vh] flex flex-col items-center justify-center bg-scroll bg-center mb-2.5;
 }
 
-.hero__content{
-  @apply absolute top-[15%] sm:top-[20%] md:top-[25%] lg:top-[35%] flex flex-col items-center justify-center;
-}
+
 
 .hero__title {
   @apply text-xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-white;
@@ -42,4 +42,22 @@
 .hero__subtitle {
   @apply text-sm sm:text-base md:text-xl lg:text-2xl text-center px-5 text-white font-light ;
 }
-/* START: Hero Styles */
+/* END: Hero Styles */
+
+
+/* ___________________________ */
+
+
+/* START: FoodDisplay Styles */
+
+.foodDisplay{
+  @apply flex flex-col items-center justify-center mt-5;
+}
+
+.foodDisplay__heading{
+  @apply text-center text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-700 underline decoration-double underline-offset-8 decoration-orange-500;
+}
+
+/* START: FoodDisplay Styles */
+
+
